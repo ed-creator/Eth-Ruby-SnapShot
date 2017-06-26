@@ -32,9 +32,12 @@ class Accounts < Sequel::Model
       Accounts.create(:address => account_json['data'][0]['address'],
                       :account_balance =>   account_json['data'][0]['balance'])
     end
+  end
 
     # print out the number of records
-    def print
+    dataset_module do
+
+    def printf
       puts "Item count: #{accounts.count}"
     end
   end
