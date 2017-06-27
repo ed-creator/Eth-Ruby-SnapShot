@@ -39,7 +39,7 @@ class Accounts < Sequel::Model
 
   dataset_module do
     def wei_to_ether(balance)
-      return balance / WEI_EHTER_RATIO
+      return (balance / WEI_EHTER_RATIO).round(3)
     end
   end
 end
