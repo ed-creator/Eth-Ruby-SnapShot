@@ -2,6 +2,14 @@
 
 A simple Roda App that allows the user to take a snapshot of an Ethereum address and stores it in a Sqlite Database. 
 
+## Launch App
+
+```
+git clone https://github.com/edwardwardward/Eth-Ruby-SnapShot
+cd Eth-Ruby-SnapShot
+rackup
+```
+
 ## Add an Eth address snapshot
 
 ```
