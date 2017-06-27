@@ -9,11 +9,10 @@ class EthSnapshot < Roda
         r.post do
           @address = r.params['address']
           Accounts.add_address(@address)
-          require 'pry'; binding.pry
         end
       end
       r.is "print" do
-        puts Accounts.dataset.all()
+        Accounts.get_accounts_json
       end
     end
   end
