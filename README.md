@@ -7,6 +7,7 @@ A simple Roda App that allows the user to take a snapshot of an Ethereum address
 ```
 git clone https://github.com/edwardwardward/Eth-Ruby-SnapShot.git
 cd Eth-Ruby-SnapShot
+bundle
 rackup
 ```
 
