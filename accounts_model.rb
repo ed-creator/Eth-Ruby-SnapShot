@@ -22,7 +22,6 @@ class Accounts < Sequel::Model
       account_json['data'][0]['address']
       Accounts.create(:address => account_json['data'][0]['address'],
                       :account_balance =>   account_json['data'][0]['balance'])
-      require 'pry'; binding.pry
     end
   end
 
